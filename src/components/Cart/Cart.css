@@ -1,0 +1,77 @@
+/* Cart.css */
+
+.cart-page {
+    padding: 16px;
+    background-color: #fff; /* White background for the cart page */
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px; /* Space between table and summary */
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #eaeaea; /* Light grey border for table rows */
+  }
+  
+  .cart-table th {
+    background-color: #f9f9f9; /* Light grey background for table header */
+  }
+  
+  input[type="number"] {
+    width: 60px; /* Width of quantity input */
+    padding: 4px;
+    margin: 0 4px; /* Margin between input and increment/decrement buttons */
+    text-align: center;
+  }
+  
+  button {
+    padding: 6px 12px;
+    background-color: #ff6a6a; /* Red background for delete button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px; /* Space after the input field */
+  }
+  
+  button:hover {
+    opacity: 0.9; /* Slight opacity change on hover */
+  }
+  
+  .clear-cart-btn {
+    background-color: #d1d1d1; /* Light grey for clear cart button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px; /* Space between table and summary */
+    border-top: 2px solid #eaeaea; /* Light grey border above summary */
+  }
+  
+  .total-cost {
+    font-size: 1.2em; /* Larger text for total cost */
+    font-weight: bold;
+  }
+  
+  .checkout-btn {
+    background-color: #ff4500; /* Orangered background for check out button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #e63e00; /* Darker on hover */
+  }
+  

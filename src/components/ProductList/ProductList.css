@@ -1,0 +1,104 @@
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 250px; /* Fixed width */
+    height: auto; /* Allow item height to grow based on content */
+    background-color: #fff; /* Optional: background color for the product item */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: box shadow for styling */
+    margin-bottom: 16px; /* Space below the item */
+    position: relative; /* For absolute positioning of the category label */
+  }
+  
+  .product-image {
+    width: 100%; /* Full width of the container */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Cover the space without distorting aspect ratio */
+    border-bottom: 1px solid #ddd; /* Line to separate image from the text */
+  }
+  
+  
+  .product-info {
+    padding: 8px;
+    flex-grow: 1; /* Allows the product info to fill the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space content evenly */
+  }
+  
+  .product-brand,
+  .product-title,
+  .product-description,
+  .product-pricing {
+    margin-bottom: 8px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .discounted-price {
+    color: #E44D26;
+    margin-right: 5px;
+  }
+  
+  .discount-percentage {
+    font-weight: bold;
+    color: #E44D26;
+  }
+  
+  .category-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 8px;
+    font-size: 0.8em;
+  }
+  
+  .view-details-link {
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  /* Category specific styles - you can add colors for each category */
+  .category-tops {
+    background-color: #add8e6;
+    color: black;
+  }
+  
+  .category-home-decoration {
+    background-color: #ffd700;
+    color: black;
+  }
+
+  .category-overlay {
+  position: absolute;
+  top: 0; /* Adjust if you want any spacing from the top */
+  left: 0; /* Adjust if you want any spacing from the left */
+  background-color: #f8953e; /* Example bright orange background */
+  color: white; /* White text color */
+  padding: 5px 10px; /* Example padding, adjust as needed */
+  border-radius: 0; /* No rounded corners */
+  font-size: 0.8em; /* Larger font size for visibility */
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: add shadow for depth */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); /* Creates slanted right edge */
+}

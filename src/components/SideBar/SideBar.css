@@ -1,0 +1,66 @@
+/* Sidebar.css */
+.toggle-sidebar {
+    font-size: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 3.6rem;
+    left: 1rem;
+    background: white;
+    border: none;
+    color: teal; /* Assuming your button is white */
+    z-index: 200; /* Above the sidebar */
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: -250px; /* Hide the sidebar by default */
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 100;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Show the sidebar */
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: teal; /* Set background of the header */
+    color: white; /* Set the text color to white for contrast */
+  }
+  
+  .close-sidebar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white; /* Assuming your button is white */
+  }
+  
+  .category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .category-item {
+    padding: 0.5rem 1rem;
+    color: black;
+    cursor: pointer;
+    border-bottom: 1px solid #362d2d;
+  }
+  
+  .category-item:hover,
+  .category-item.active {
+    color: teal;
+    background-color: #f0f0f0;
+  }
+  

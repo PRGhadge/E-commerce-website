@@ -1,0 +1,246 @@
+/* styles.css */
+
+/* Set default styles for the body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6; /* Light gray background */
+  color: #333; /* Dark text color */
+}
+
+/* Header styles */
+.header {
+  background-color: #129191; /* Teal color */
+  color: white; /* White text color */
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem; /* Add padding to the header */
+  justify-content: space-between;
+  height: 150px; /* Set header height */
+}
+
+/* Search bar container styles */
+.search-bar-container {
+  display: flex;
+  padding-top: 60px; /* Add top padding to the search bar */
+  gap: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 1.2rem;
+}
+
+/* Input field styles */
+.search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+/* Search button and clear button styles */
+.search-button,
+.clear-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0 4px 4px 0; /* Only round the right side corners */
+  background-color: #005151; /* Darker teal for buttons */
+  color: white; /* White text color */
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Select and button styles */
+select,
+button {
+  padding: 8px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #008080; /* Teal background */
+  color: #fff; /* White text color */
+  cursor: pointer;
+}
+
+/* Hover styles for select and button */
+select:hover,
+button:hover {
+  background-color: #005151; /* Darker teal on hover */
+}
+
+/* Disabled button styles */
+button:disabled {
+  background-color: #ccc; /* Light gray for disabled state */
+  cursor: not-allowed;
+}
+
+/* Shopping cart icon styles */
+.shopping-cart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Cart container styles */
+.cart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 5px;
+  padding: 10px; /* Add padding to the cart */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Cart title styles */
+.cart h2 {
+  font-size: 18px; /* Larger font size */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Cart list styles */
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Cart item styles */
+.cart li {
+  margin-bottom: 15px; /* Add bottom margin */
+}
+
+/* Cart button styles */
+.cart button {
+  background-color: #dc3545; /* Red background */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px; /* Add padding to the button */
+  cursor: pointer;
+}
+
+/* Hover styles for cart button */
+.cart button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Brand link styles */
+.brand {
+  display: inline-block; /* Make sure it's inline-block or block */
+  margin-left: 60px; /* Adjust the value as needed to shift to the right */
+  color: rgb(161, 230, 221); /* Teal color */
+  text-shadow: #333; /* Text shadow */
+  padding-left: 20px; /* Add left padding */
+}
+
+/* Brand link styles for different states */
+.brand,
+.brand:hover,
+.brand:active,
+.brand:visited {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 60px;
+  color: inherit; /* Inherit text color */
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed; /* Fixed positioning */
+  -ms-overflow-style: none; /* Hide scrollbar for IE */
+  top: 0;
+  left: -200px; /* Initially hide the sidebar */
+  width: 200px; /* Sidebar width */
+  height: 100%;
+  color: #fff; /* White text color */
+  overflow-x: hidden;
+  transition: 0.5s; /* Add transition effect */
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 0.2rem; /* Add padding to the sidebar */
+  min-height: 100vh; /* Set minimum height to viewport height */
+  overflow-y: auto; /* Allow vertical scroll */
+}
+
+/* Sidebar list styles */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar list item styles */
+.sidebar li {
+  padding: 0.5rem 0; /* Add padding to list items */
+  cursor: pointer; /* Set cursor to pointer */
+}
+
+/* Hover styles for sidebar list item */
+.sidebar li:hover,
+.sidebar li.active {
+  background-color: #e6ffff; /* Very light teal on hover */
+}
+
+/* Expanded sidebar styles */
+.sidebar.expanded {
+  left: 0; /* Show the sidebar */
+}
+
+/* Sidebar toggle button styles */
+.sidebar-toggle {
+  cursor: pointer; /* Set cursor to pointer */
+  padding: 10px; /* Add padding to the toggle button */
+}
+
+/* Toggle icon styles */
+.toggle-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* White color */
+  margin: 4px 0; /* Add margin */
+}
+
+/* Container for app content */
+.app-container {
+  padding: 1rem; /* Add padding */
+}
+
+/* Container for main content */
+.content-container {
+  display: flex; /* Use flexbox layout */
+}
+
+/* Main content styles */
+.main-content {
+  flex: 3; /* Adjust the width of the main content */
+  margin-right: 1rem; /* Add some space between main content and cart */
+  margin-left: 1rem; /* Add some space on the left */
+}
+
+/* Shopping cart styles */
+.shopping-cart {
+  flex: 1; /* Adjust the width of the shopping cart */
+}
+
+/* Footer styles */
+footer {
+  background-color: #008080; /* Teal background */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 1rem; /* Add padding */
+  position: relative; /* Position relative */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width */
+}
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .header,
+  .product-grid,
+  .sidebar {
+    flex-direction: column; /* Change flex direction to column */
+  }
+
+  .product-item {
+    width: 100%; /* Set product item width to 100% */
+  }
+}
